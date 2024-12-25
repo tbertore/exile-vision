@@ -1,0 +1,17 @@
+{
+  "name": "exile-vision",
+  "version": "1.0.0",
+  "description": "item simulator for path of exile 2",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Todd Bertorelli",
+  "license": "ISC",
+  "devDependencies": {
+    "@eslint/js": "^9.17.0",
+    "eslint": "^8.57.1",
+    "typescript": "^5.7.2",
+    "typescript-eslint": "^8.18.2"
+  }
+}
