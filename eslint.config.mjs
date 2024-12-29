@@ -1,6 +1,7 @@
-import eslint from '@eslint/js';
-import tseslint from 'typescript-eslint';
-import jest from 'eslint-plugin-jest';
+import eslint from '@eslint/js'
+import tseslint from 'typescript-eslint'
+import jest from 'eslint-plugin-jest'
+import eslintConfigPrettier from 'eslint-config-prettier'
 
 export default tseslint.config(
   eslint.configs.recommended,
@@ -8,17 +9,17 @@ export default tseslint.config(
   tseslint.configs.stylistic,
   tseslint.configs.recommendedTypeChecked,
   {
-    ignores: ["node_modules", "dist", "eslint.config.mjs",],
-    files: ["src/**/*.ts"],
+    ignores: ['node_modules', 'dist', 'eslint.config.mjs'],
+    files: ['src/**/*.ts'],
     plugins: {
-      jest
+      jest,
     },
     languageOptions: {
       globals: {
-        ...jest.environments.globals.globals
+        ...jest.environments.globals.globals,
       },
       parserOptions: {
-        projectService: true,
+        project: 'tsconfig.eslint.json',
         tsconfigRootDir: import.meta.dirname,
       },
     },
@@ -30,4 +31,5 @@ export default tseslint.config(
       'jest/valid-expect': 'error',
     },
   },
-);
+  eslintConfigPrettier,
+)

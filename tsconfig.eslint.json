@@ -1,6 +1,8 @@
+/** Includes tests for linting.
+  * https://typescript-eslint.io/troubleshooting/typed-linting/#i-get-errors-telling-me-eslint-was-configured-to-run--however-that-tsconfig-does-not--none-of-those-tsconfigs-include-this-file
+  */
 {
-  "include": ["src/**/*.ts"],
-  //"exclude": ["src/**/*.test.ts"],
+  "include": ["src/**/*.ts", "eslint.config.mjs"],
   "compilerOptions": {
     /* Visit https://aka.ms/tsconfig to read more about this file */
 
