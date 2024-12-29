@@ -8,8 +8,8 @@ export default tseslint.config(
   tseslint.configs.stylistic,
   tseslint.configs.recommendedTypeChecked,
   {
-    ignores: ["/node_modules", "/dist", "eslint.config.mjs",],
-    files: ["/src/**/*.ts"],
+    ignores: ["node_modules", "dist", "eslint.config.mjs",],
+    files: ["src/**/*.ts"],
     plugins: {
       jest
     },
@@ -19,6 +19,7 @@ export default tseslint.config(
       },
       parserOptions: {
         projectService: true,
+        tsconfigRootDir: import.meta.dirname,
       },
     },
     rules: {
