@@ -1,5 +1,3 @@
-// @ts-check
-
 import eslint from '@eslint/js';
 import tseslint from 'typescript-eslint';
 import jest from 'eslint-plugin-jest';
@@ -10,7 +8,8 @@ export default tseslint.config(
   tseslint.configs.stylistic,
   tseslint.configs.recommendedTypeChecked,
   {
-    ignores: ["/node_modules"],
+    ignores: ["/node_modules", "/dist", "eslint.config.mjs",],
+    files: ["/src/**/*.ts"],
     plugins: {
       jest
     },
