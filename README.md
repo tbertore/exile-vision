@@ -1,2 +1,4 @@
 # exile-vision
-item simulator for path of exile 2
+Prototype project for Path of Exile 2.
+
+Game data extracted using https://snosme.github.io/poe-dat-viewer/.

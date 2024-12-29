@@ -4,14 +4,28 @@
   "description": "item simulator for path of exile 2",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "clean": "rm -rf ./dist ./node_modules",
+    "prebuild": "rm -rf ./dist",
+    "build": "tsc",
+    "test": "tsc --noEmit && jest",
+    "release": "npm run build && npm run lint && npm run test",
+    "lint": "npm run lint-es && npm run lint-ts",
+    "lint-es": "eslint src/lib/**",
+    "lint-ts": "tsc --noEmit"
   },
   "author": "Todd Bertorelli",
-  "license": "ISC",
+  "license": "",
   "devDependencies": {
     "@eslint/js": "^9.17.0",
-    "eslint": "^8.57.1",
+    "@jest/globals": "^29.7.0",
+    "@types/jest": "^29.5.14",
+    "eslint": "^9.x",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.2.5",
     "typescript": "^5.7.2",
     "typescript-eslint": "^8.18.2"
+  },
+  "dependencies": {
+    "eslint-plugin-jest": "^28.10.0"
   }
 }
