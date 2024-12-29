@@ -1,0 +1,349 @@
+[
+  {
+    "_rid": 0,
+    "StatsKey": 10024,
+    "TagsKeys": [
+      316
+    ],
+    "Unknown3": true,
+    "Unknown4": 0,
+    "Unknown5": true
+  },
+  {
+    "_rid": 1,
+    "StatsKey": 10025,
+    "TagsKeys": [
+      34
+    ],
+    "Unknown3": true,
+    "Unknown4": 0,
+    "Unknown5": true
+  },
+  {
+    "_rid": 2,
+    "StatsKey": 10026,
+    "TagsKeys": [
+      319
+    ],
+    "Unknown3": true,
+    "Unknown4": 0,
+    "Unknown5": true
+  },
+  {
+    "_rid": 3,
+    "StatsKey": 10027,
+    "TagsKeys": [
+      317
+    ],
+    "Unknown3": true,
+    "Unknown4": 0,
+    "Unknown5": true
+  },
+  {
+    "_rid": 4,
+    "StatsKey": 10028,
+    "TagsKeys": [
+      323
+    ],
+    "Unknown3": true,
+    "Unknown4": 0,
+    "Unknown5": true
+  },
+  {
+    "_rid": 5,
+    "StatsKey": 10029,
+    "TagsKeys": [
+      309
+    ],
+    "Unknown3": true,
+    "Unknown4": 0,
+    "Unknown5": true
+  },
+  {
+    "_rid": 6,
+    "StatsKey": 10030,
+    "TagsKeys": [
+      581
+    ],
+    "Unknown3": true,
+    "Unknown4": 0,
+    "Unknown5": true
+  },
+  {
+    "_rid": 7,
+    "StatsKey": 10031,
+    "TagsKeys": [
+      313
+    ],
+    "Unknown3": true,
+    "Unknown4": 0,
+    "Unknown5": true
+  },
+  {
+    "_rid": 8,
+    "StatsKey": 10032,
+    "TagsKeys": [
+      324
+    ],
+    "Unknown3": true,
+    "Unknown4": 0,
+    "Unknown5": true
+  },
+  {
+    "_rid": 9,
+    "StatsKey": 10033,
+    "TagsKeys": [
+      312
+    ],
+    "Unknown3": true,
+    "Unknown4": 0,
+    "Unknown5": true
+  },
+  {
+    "_rid": 10,
+    "StatsKey": 10034,
+    "TagsKeys": [
+      310
+    ],
+    "Unknown3": true,
+    "Unknown4": 0,
+    "Unknown5": true
+  },
+  {
+    "_rid": 11,
+    "StatsKey": 10035,
+    "TagsKeys": [
+      311
+    ],
+    "Unknown3": true,
+    "Unknown4": 0,
+    "Unknown5": true
+  },
+  {
+    "_rid": 12,
+    "StatsKey": 2392,
+    "TagsKeys": [
+      319
+    ],
+    "Unknown3": false,
+    "Unknown4": 1,
+    "Unknown5": false
+  },
+  {
+    "_rid": 13,
+    "StatsKey": 2391,
+    "TagsKeys": [
+      34
+    ],
+    "Unknown3": false,
+    "Unknown4": 1,
+    "Unknown5": false
+  },
+  {
+    "_rid": 14,
+    "StatsKey": 11785,
+    "TagsKeys": [
+      313
+    ],
+    "Unknown3": true,
+    "Unknown4": 0,
+    "Unknown5": false
+  },
+  {
+    "_rid": 15,
+    "StatsKey": 11786,
+    "TagsKeys": [
+      309
+    ],
+    "Unknown3": true,
+    "Unknown4": 0,
+    "Unknown5": false
+  },
+  {
+    "_rid": 16,
+    "StatsKey": 11787,
+    "TagsKeys": [
+      311
+    ],
+    "Unknown3": true,
+    "Unknown4": 0,
+    "Unknown5": false
+  },
+  {
+    "_rid": 17,
+    "StatsKey": 11788,
+    "TagsKeys": [
+      310
+    ],
+    "Unknown3": true,
+    "Unknown4": 0,
+    "Unknown5": false
+  },
+  {
+    "_rid": 18,
+    "StatsKey": 11789,
+    "TagsKeys": [
+      312
+    ],
+    "Unknown3": true,
+    "Unknown4": 0,
+    "Unknown5": false
+  },
+  {
+    "_rid": 19,
+    "StatsKey": 11790,
+    "TagsKeys": [
+      608
+    ],
+    "Unknown3": true,
+    "Unknown4": 0,
+    "Unknown5": false
+  },
+  {
+    "_rid": 20,
+    "StatsKey": 11791,
+    "TagsKeys": [
+      323
+    ],
+    "Unknown3": true,
+    "Unknown4": 0,
+    "Unknown5": false
+  },
+  {
+    "_rid": 21,
+    "StatsKey": 11792,
+    "TagsKeys": [
+      324
+    ],
+    "Unknown3": true,
+    "Unknown4": 0,
+    "Unknown5": false
+  },
+  {
+    "_rid": 22,
+    "StatsKey": 11793,
+    "TagsKeys": [
+      572
+    ],
+    "Unknown3": true,
+    "Unknown4": 0,
+    "Unknown5": false
+  },
+  {
+    "_rid": 23,
+    "StatsKey": 11794,
+    "TagsKeys": [
+      581
+    ],
+    "Unknown3": true,
+    "Unknown4": 0,
+    "Unknown5": false
+  },
+  {
+    "_rid": 24,
+    "StatsKey": 11795,
+    "TagsKeys": [
+      583
+    ],
+    "Unknown3": true,
+    "Unknown4": 0,
+    "Unknown5": false
+  },
+  {
+    "_rid": 25,
+    "StatsKey": 11796,
+    "TagsKeys": [
+      579
+    ],
+    "Unknown3": true,
+    "Unknown4": 0,
+    "Unknown5": false
+  },
+  {
+    "_rid": 26,
+    "StatsKey": 11844,
+    "TagsKeys": [
+      316
+    ],
+    "Unknown3": true,
+    "Unknown4": 0,
+    "Unknown5": false
+  },
+  {
+    "_rid": 27,
+    "StatsKey": 11887,
+    "TagsKeys": [
+      317
+    ],
+    "Unknown3": true,
+    "Unknown4": 0,
+    "Unknown5": false
+  },
+  {
+    "_rid": 28,
+    "StatsKey": 11888,
+    "TagsKeys": [
+      580
+    ],
+    "Unknown3": true,
+    "Unknown4": 0,
+    "Unknown5": false
+  },
+  {
+    "_rid": 29,
+    "StatsKey": 12175,
+    "TagsKeys": [],
+    "Unknown3": true,
+    "Unknown4": 0,
+    "Unknown5": false
+  },
+  {
+    "_rid": 30,
+    "StatsKey": 13346,
+    "TagsKeys": [
+      659
+    ],
+    "Unknown3": true,
+    "Unknown4": 0,
+    "Unknown5": false
+  },
+  {
+    "_rid": 31,
+    "StatsKey": 17485,
+    "TagsKeys": [
+      320
+    ],
+    "Unknown3": true,
+    "Unknown4": 0,
+    "Unknown5": false
+  },
+  {
+    "_rid": 32,
+    "StatsKey": 17486,
+    "TagsKeys": [
+      605
+    ],
+    "Unknown3": true,
+    "Unknown4": 0,
+    "Unknown5": false
+  },
+  {
+    "_rid": 33,
+    "StatsKey": 17487,
+    "TagsKeys": [
+      606,
+      653
+    ],
+    "Unknown3": true,
+    "Unknown4": 0,
+    "Unknown5": false
+  },
+  {
+    "_rid": 34,
+    "StatsKey": 3706,
+    "TagsKeys": [],
+    "Unknown3": false,
+    "Unknown4": 0,
+    "Unknown5": true
+  }
+]

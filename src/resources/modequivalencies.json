@@ -1,0 +1,66 @@
+[
+  {
+    "_rid": 0,
+    "Id": "Resist1",
+    "ModsKey0": 36,
+    "ModsKey1": 44,
+    "ModsKey2": 52,
+    "Unknown5": true
+  },
+  {
+    "_rid": 1,
+    "Id": "Resist2",
+    "ModsKey0": 37,
+    "ModsKey1": 45,
+    "ModsKey2": 53,
+    "Unknown5": true
+  },
+  {
+    "_rid": 2,
+    "Id": "Resist3",
+    "ModsKey0": 38,
+    "ModsKey1": 46,
+    "ModsKey2": 54,
+    "Unknown5": true
+  },
+  {
+    "_rid": 3,
+    "Id": "Resist4",
+    "ModsKey0": 39,
+    "ModsKey1": 47,
+    "ModsKey2": 55,
+    "Unknown5": true
+  },
+  {
+    "_rid": 4,
+    "Id": "Resist5",
+    "ModsKey0": 40,
+    "ModsKey1": 48,
+    "ModsKey2": 56,
+    "Unknown5": true
+  },
+  {
+    "_rid": 5,
+    "Id": "Resist6",
+    "ModsKey0": 41,
+    "ModsKey1": 49,
+    "ModsKey2": 57,
+    "Unknown5": true
+  },
+  {
+    "_rid": 6,
+    "Id": "Resist7",
+    "ModsKey0": 42,
+    "ModsKey1": 50,
+    "ModsKey2": 58,
+    "Unknown5": true
+  },
+  {
+    "_rid": 7,
+    "Id": "Resist8",
+    "ModsKey0": 43,
+    "ModsKey1": 51,
+    "ModsKey2": 59,
+    "Unknown5": true
+  }
+]
