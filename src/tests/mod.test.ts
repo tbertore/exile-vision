@@ -1,3 +1,4 @@
+import { describe, expect, it } from 'vitest'
 import { Mod, ModDefinition, renderModDescription } from '../lib/model/mod.js'
 import { Stat, StatDefinition } from '../lib/model/stat.js'
 
@@ -45,3 +46,5 @@ describe('renderModDescription', () => {
     expect(renderModDescription(mod)).toBe('+25% to Testability')
   })
 })
+
+export default {}

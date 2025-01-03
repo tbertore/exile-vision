@@ -1,4 +1,4 @@
-module.exports = {
+const config = {
   plugins: ['@ianvs/prettier-plugin-sort-imports'],
 
   embeddedLanguageFormatting: 'auto',
@@ -17,3 +17,5 @@ module.exports = {
   importOrderTypeScriptVersion: '5.0.0',
   importOrderCaseSensitive: false,
 }
+
+export default config

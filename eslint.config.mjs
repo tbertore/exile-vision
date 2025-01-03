@@ -1,7 +1,6 @@
 import eslint from '@eslint/js'
-import tseslint from 'typescript-eslint'
-import jest from 'eslint-plugin-jest'
 import eslintConfigPrettier from 'eslint-config-prettier'
+import tseslint from 'typescript-eslint'
 
 export default tseslint.config(
   eslint.configs.recommended,
@@ -11,25 +10,15 @@ export default tseslint.config(
   {
     ignores: ['node_modules', 'dist', 'eslint.config.mjs'],
     files: ['src/**/*.ts'],
-    plugins: {
-      jest,
-    },
+    plugins: {},
     languageOptions: {
-      globals: {
-        ...jest.environments.globals.globals,
-      },
       parserOptions: {
+        sourceType: 'module',
         project: 'tsconfig.eslint.json',
         tsconfigRootDir: import.meta.dirname,
       },
     },
-    rules: {
-      'jest/no-disabled-tests': 'warn',
-      'jest/no-focused-tests': 'error',
-      'jest/no-identical-title': 'error',
-      'jest/prefer-to-have-length': 'warn',
-      'jest/valid-expect': 'error',
-    },
+    rules: {},
   },
   eslintConfigPrettier,
 )

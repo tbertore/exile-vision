@@ -8,7 +8,7 @@
     "clean": "rm -rf ./dist ./node_modules",
     "prebuild": "rm -rf ./dist",
     "build": "npm install && tsc",
-    "test": "tsc --noEmit && jest",
+    "test": "tsc --noEmit && npx vitest run",
     "release": "npm run build && npm run lint && npm run test && npm run format",
     "lint": "npm run lint-es && npm run lint-ts",
     "lint-es": "eslint --fix src/**/*.ts",
@@ -21,21 +21,17 @@
   "devDependencies": {
     "@eslint/js": "^9.17.0",
     "@graphql-codegen/cli": "5.0.3",
+    "@graphql-codegen/introspection": "4.0.3",
+    "@graphql-codegen/typescript": "4.1.2",
     "@ianvs/prettier-plugin-sort-imports": "^4.4.0",
-    "@jest/globals": "^29.7.0",
-    "@types/jest": "^29.5.14",
     "eslint": "^9.x",
     "eslint-config-prettier": "^9.1.0",
-    "jest": "^29.7.0",
     "prettier": "^3.4.2",
-    "ts-jest": "^29.2.5",
     "typescript": "^5.7.2",
     "typescript-eslint": "^8.18.2",
-    "@graphql-codegen/typescript": "4.1.2",
-    "@graphql-codegen/introspection": "4.0.3"
+    "vitest": "^2.1.8"
   },
   "dependencies": {
-    "eslint-plugin-jest": "^28.10.0",
     "graphql": "^16.10.0",
     "pathofexile-dat-schema": "^8.0.0"
   }

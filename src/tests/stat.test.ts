@@ -1,4 +1,5 @@
-import { renderStatValue, Stat, StatDefinition } from '../lib/model/stat'
+import { describe, expect, it } from 'vitest'
+import { renderStatValue, Stat, StatDefinition } from '../lib/model/stat.js'
 
 describe('renderStatValue', () => {
   it('should correctly render percentage value', () => {
@@ -29,3 +30,5 @@ describe('renderStatValue', () => {
     expect(renderStatValue(stat)).toBe('25')
   })
 })
+
+export default {}
