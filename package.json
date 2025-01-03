@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "item simulator for path of exile 2",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "clean": "rm -rf ./dist ./node_modules",
     "prebuild": "rm -rf ./dist",
@@ -12,12 +13,14 @@
     "lint": "npm run lint-es && npm run lint-ts",
     "lint-es": "eslint --fix src/**/*.ts",
     "lint-ts": "tsc --noEmit",
-    "format": "prettier --write src/lib src/tests"
+    "format": "prettier --write src/lib src/tests",
+    "generate-source": "graphql-codegen --config codegen.ts"
   },
   "author": "Todd Bertorelli",
   "license": "",
   "devDependencies": {
     "@eslint/js": "^9.17.0",
+    "@graphql-codegen/cli": "5.0.3",
     "@ianvs/prettier-plugin-sort-imports": "^4.4.0",
     "@jest/globals": "^29.7.0",
     "@types/jest": "^29.5.14",
@@ -27,10 +30,13 @@
     "prettier": "^3.4.2",
     "ts-jest": "^29.2.5",
     "typescript": "^5.7.2",
-    "typescript-eslint": "^8.18.2"
+    "typescript-eslint": "^8.18.2",
+    "@graphql-codegen/typescript": "4.1.2",
+    "@graphql-codegen/introspection": "4.0.3"
   },
   "dependencies": {
     "eslint-plugin-jest": "^28.10.0",
+    "graphql": "^16.10.0",
     "pathofexile-dat-schema": "^8.0.0"
   }
 }

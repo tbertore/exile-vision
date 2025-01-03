@@ -1,5 +1,5 @@
-import { Mod, ModDefinition, renderModDescription } from '../lib/model/mod'
-import { Stat, StatDefinition } from '../lib/model/stat'
+import { Mod, ModDefinition, renderModDescription } from '../lib/model/mod.js'
+import { Stat, StatDefinition } from '../lib/model/stat.js'
 
 describe('renderModDescription', () => {
   it('should correctly render mod single stat value', () => {
@@ -41,6 +41,7 @@ describe('renderModDescription', () => {
       definition: modDefinition,
       stats: [stat],
     }
+
     expect(renderModDescription(mod)).toBe('+25% to Testability')
   })
 })

@@ -1,0 +1,403 @@
+type SoundEffects {
+  Id: string @unique
+  SoundFile: string @file(ext: ".ogg")
+  SoundFile_2D: string @file(ext: ".ogg")
+  _: bool
+  _: string
+}
+
+enum ModDomains @indexing(first: 1) {
+  ITEM
+  FLASK
+  MONSTER
+  CHEST
+  AREA
+  _
+  SANCTUM_RELIC
+  _
+  CRAFTED
+  BASE_JEWEL
+  ATLAS
+  LEAGUESTONE
+  ABYSS_JEWEL
+  MAP_DEVICE
+  DUMMY # The name indicates this is meant for the unique Piece item class
+  DELVE
+  DELVE_AREA
+  SYNTHESIS_A
+  SYNTHESIS_GLOBALS
+  SYNTHESIS_BONUS
+  AFFLICTION_JEWEL
+  HEIST_AREA
+  HEIST_NPC
+  HEIST_TRINKET
+  WATCHSTONE
+  VEILED
+  EXPEDITION_RELIC
+  UNVEILED
+  ELDRITCH_ALTAR
+  SENTINEL
+  MEMORY_LINE
+  SANCTUM_SPECIAL
+  CRUCIBLE_MAP
+  TINCTURE
+  ANIMAL_CHARM
+  NECROPOLIS_MONSTER
+  UBER_MAP
+}
+
+type ItemVisualIdentity {
+  Id: string @unique
+  DDSFile: string @file(ext: ".dds")
+  AOFile: string @file(ext: ".ao")
+  InventorySoundEffect: SoundEffects
+  HASH16: i16 @unique
+  AOFile2: string @file(ext: ".ao")
+  MarauderSMFiles: [string] @file(ext: ".sm")
+  RangerSMFiles: [string] @file(ext: ".sm")
+  WitchSMFiles: [string] @file(ext: ".sm")
+  DuelistDexSMFiles: [string] @file(ext: ".sm")
+  TemplarSMFiles: [string] @file(ext: ".sm")
+  ShadowSMFiles: [string] @file(ext: ".sm")
+  ScionSMFiles: [string] @file(ext: ".sm")
+  MarauderShape: string
+  RangerShape: string
+  WitchShape: string
+  DuelistShape: string
+  TemplarShape: string
+  ShadowShape: string
+  ScionShape: string
+  _: i32
+  _: i32
+  Pickup_AchievementItemsKeys: [AchievementItems]
+  SMFiles: [string] @file(ext: ".sm")
+  Identify_AchievementItemsKeys: [AchievementItems]
+  EPKFile: string @file(ext: ".epk")
+  Corrupt_AchievementItemsKeys: [AchievementItems]
+  IsAlternateArt: bool
+  _: bool
+  CreateCorruptedJewelAchievementItemsKey: AchievementItems
+  AnimationLocation: string
+  _: string
+  _: string
+  _: string
+  _: string
+  _: string
+  _: string
+  _: string
+  _: string
+  _: string
+  _: string
+  _: string
+  _: string
+  IsAtlasOfWorldsMapIcon: bool
+  IsTier16Icon: bool
+  _: [i32]
+  _: bool
+  _: [rid]
+  _: string
+  "0: Standard, 1: Flask, 2: Divination Card, 3: Gem"
+  Composition: i32
+  _: rid
+  _: rid
+  _: rid
+  _: rid
+  _: [rid]
+  _: [rid]
+  _: bool
+}
+
+type AchievementItems {
+  Id: string @unique
+  _: i32
+  _: i32
+  Name: string
+  CompletionsRequired: i32
+  AchievementsKey: Achievements
+  _: bool
+  _: bool
+  _: bool
+  _: bool
+}
+
+type Achievements {
+  Id: string @unique
+  Description: string
+  SetId: AchievementSetsDisplay @ref(column: "Id")
+  Objective: string
+  HASH16: i16
+  _: bool
+  HideAchievementItems: bool
+  _: bool
+  MinCompletedItems: i32
+  TwoColumnLayout: bool
+  ShowItemCompletionsAsOne: bool
+  _: string
+  SoftcoreOnly: bool
+  HardcoreOnly: bool
+  _: bool
+  _: string
+  _: string
+  _: string
+}
+
+type AchievementSetsDisplay {
+  Id: i32 @unique
+  Title: string
+}
+
+type TradeMarketCategory {
+  Id: string
+  Name: string @localized
+  StyleFlag: TradeMarketCategoryStyleFlag
+  Group: TradeMarketCategoryGroups
+  _: [i32]
+  _: bool
+  IsDisabled: bool
+}
+
+type ItemClassCategories {
+  Id: string @unique
+  Text: string
+  _: rid
+}
+
+type QuestFlags {
+  Id: string
+  HASH32: i32
+}
+
+type ItemStances {
+  Id: string @unique
+}
+
+type ModType {
+  Name: string @unique
+  ModSellPriceTypesKeys: [ModSellPriceTypes]
+  _: bool
+}
+
+type ModSellPriceTypes {
+  Id: string @unique
+}
+
+enum ModGenerationType @indexing(first: 1) {
+  PREFIX
+  SUFFIX
+  UNIQUE
+  NEMESIS
+  CORRUPTED
+  BLOODLINES
+  TORMENT
+  TEMPEST
+  TALISMAN
+  ENCHANTMENT
+  ESSENCE
+  _
+  BESTIARY
+  DELVE_AREA
+  SYNTHESIS_A
+  SYNTHESIS_GLOBALS
+  SYNTHESIS_BONUS
+  BLIGHT
+  BLIGHT_TOWER
+  MONSTER_AFFLICTION
+  FLASK_ENCHANTMENT_ENKINDLING
+  FLASK_ENCHANTMENT_INSTILLING
+  EXPEDITION_LOGBOOK
+  SCOURGE_UPSIDE
+  SCOURGE_DOWNSIDE
+  SCOURGE_MAP
+  _
+  EXARCH_IMPLICIT
+  EATER_IMPLICIT
+  _
+  WEAPON_TREE
+  WEAPON_TREE_RECOMBINED
+  _
+  NECROPOLIS_HAUNTED
+  NECROPOLIS_DEVOTED
+}
+
+type ModFamily {
+  Id: string @unique
+}
+
+type ActiveSkillType {
+  Id: string @unique
+  FlagStat: Stats
+}
+
+enum ActiveSkillTargetTypes @indexing(first: 1) {
+  TARGETABLE_GROUND
+  ENEMY
+  WALKABLE_GROUND
+  ANYWHERE_SELF_TARGET
+  ITEM
+  CORPSE
+  _
+  NO_LINE_OF_SIGHT
+  BEHIND_MONSTER
+  SELF_ORIGIN
+  ROTATE_TO_TARGET
+}
+
+enum SkillTotems @indexing(first: 0) {
+  _
+}
+
+type AlternateSkillTargetingBehaviours {
+  Id: string @unique
+  _: i32
+  ClientStrings: ClientStrings
+  _: i32
+  _: i32
+  _: i32
+  _: [i32]
+}
+
+type VirtualStatContextFlags {
+  Id: string @unique
+  _: i32
+}
+
+type ClientStrings {
+  Id: string @unique
+  Text: string
+  XBoxText: string
+  XBoxText2: string
+  HASH32: i32
+  PlaystationText: string
+}
+
+type Animation {
+  Id: string @unique
+  _: bool
+  _: bool
+  _: bool
+  Mainhand_AnimationKey: Animation
+  Offhand_AnimationKey: Animation
+  _: bool
+  _: rid
+  _: Animation
+  _: bool
+  _: Animation
+  _: [string]
+}
+
+type MultiPartAchievements {
+  Id: string @unique
+  _: i32
+  AchievementItemsKey: AchievementItems
+  Threshold: i32
+  _: bool
+  _: bool
+  _: i32
+}
+
+enum CooldownBypassTypes @indexing(first: 1) {
+  _
+}
+
+enum ModAuraFlags @indexing(first: 0) {
+  _
+}
+
+enum InfluenceTypes @indexing(first: 0) {
+  SHAPER
+  ELDER
+  CRUSADER
+  EYRIE
+  BASILISK
+  ADJUDICATOR
+  NONE
+}
+
+enum BuffMergeModes @indexing(first: 0) {
+  _
+}
+
+type BuffVisuals {
+  Id: string @unique
+  BuffDDSFile: string @file(ext: ".dds")
+  EPKFiles1: [string] @file(ext: ".epk")
+  EPKFiles2: [string] @file(ext: ".epk")
+  PreloadGroups: [PreloadGroups]
+  _: bool
+  BuffName: string
+  MiscAnimated1: MiscAnimated
+  MiscAnimated2: MiscAnimated
+  BuffDescription: string
+  EPKFile: string @file(ext: ".epk")
+  HasExtraArt: bool
+  ExtraArt: string
+  _: [i32]
+  EPKFiles: [string] @file(ext: ".epk")
+  BuffVisualOrbs: [BuffVisualOrbs]
+  MiscAnimated3: MiscAnimated
+  _: rid
+  _: string
+}
+
+type PreloadGroups {
+  Id: string @unique
+}
+
+type MiscAnimated {
+  Id: string @unique
+  AOFile: string @file(ext: ".ao")
+  PreloadGroupsKeys: [PreloadGroups]
+  _: i32
+  _: i32
+  HASH32: i32
+}
+
+type BuffVisualOrbs {
+  Id: string @unique
+  BuffVisualOrbTypesKey: BuffVisualOrbTypes
+  BuffVisualOrbArtKeys: [BuffVisualOrbArt]
+  Player_BuffVisualOrbArtKeys: [BuffVisualOrbArt]
+  BuffVisualOrbArtKeys2: [BuffVisualOrbArt]
+}
+
+type BuffVisualOrbArt {
+  Id: string @unique
+  MiscAnimated: MiscAnimated
+  _: [i32]
+  _: [string]
+  _: string
+  _: string
+  _: string
+  _: string
+  _: i32
+  _: rid
+  _: rid
+  _: rid
+  _: rid
+  _: bool
+  _: i32
+}
+
+enum StatSemantics @indexing(first: 1) {
+  PERCENT
+  OVERRIDE_VALUE
+  VALUE
+  FLAG
+  OVERRIDE_PERCENT
+  PERMYRIAD
+  OVERRIDE_PERMYRIAD
+}
+
+type PassiveSkillStatCategories {
+  Id: string @unique
+  Name: string
+}
+
+enum TradeMarketCategoryStyleFlag @indexing(first: 0) {
+  _
+}
+
+type TradeMarketCategoryGroups {
+  Id: string
+  Name: string @localized
+}

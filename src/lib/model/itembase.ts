@@ -1,4 +1,4 @@
-import { Mod } from './mod'
+import { Mod } from './mod.js'
 
 export interface ItemBase {
   itemClass: string

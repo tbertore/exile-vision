@@ -1,4 +1,4 @@
-import { renderStatValue, Stat, StatDefinition } from './stat'
+import { renderStatValue, Stat, StatDefinition } from './stat.js'
 
 export interface Mod {
   definition: ModDefinition
